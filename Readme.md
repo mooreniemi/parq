@@ -3,6 +3,12 @@
 Examples of using Parquet, Arrow, Polars, or other dataframe readers in
 Rust. `main.rs` is a "sandbox" and iterations are moved into `examples/`.
 
+There's really only one "live" (updated recently) project under [dataframe
+keyword](https://crates.io/keywords/dataframe), which is Polars. Peroxide
+has a dataframe implementation but only csv and
+[netcdf](https://www.unidata.ucar.edu/software/netcdf/) support, no
+Parquet/Arrow reader.
+
 ## how to run
 
 ```
