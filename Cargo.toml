@@ -8,8 +8,11 @@ edition = "2021"
 [dependencies]
 # conflicts with arrow2
 # parquet = "11"
-arrow = "11"
+# conflicts with datafusion
+# arrow = "11"
 arrow2 = { version = "0.10.1", features = ["io_parquet", "io_parquet_compression"] }
 polars = { version = "0.20", features = ["parquet", "lazy"] }
 # no parquet or arrow support at all
 # peroxide = { version = "0.30", features = ["nc", "csv"] }
+datafusion = { version = "7" }
+tokio = { version = "1.17" }
